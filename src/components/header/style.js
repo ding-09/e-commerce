@@ -14,16 +14,14 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
-
-export const IconContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   svg {
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
+
 
 export const Figure = styled.figure`
   display: flex;
