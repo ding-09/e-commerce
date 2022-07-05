@@ -1,22 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/logo.svg';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { MdOutlineShoppingBag } from 'react-icons/md';
-import { Container, Navbar } from './style';
+import { ReactComponent as ExitIcon } from '../../assets/times.svg';
+import { Container, Navbar, IconContainer, Figure } from './style';
 
 const Header = () => {
+  // toggle menu open and close
+  const [menu, toggleMenu] = useState(false);
+
   return (
     <Container>
       <Navbar>
-        <div className='menu'>
-          <HiOutlineMenuAlt4/>
-        </div>
-        <figure className='logo'>
+        <IconContainer onClick={() => {toggleMenu(!menu)}}>
+          {menu ? <ExitIcon /> : <HiOutlineMenuAlt4 />}
+        </IconContainer>
+        <Figure className='logo'>
           <img src={logo} alt='Logo' />
-        </figure>
-        <div className='shopping-bag'>
+        </Figure>
+        <IconContainer className='shopping-bag'>
           <MdOutlineShoppingBag />
-        </div>
+        </IconContainer>
       </Navbar>
     </Container>
   );

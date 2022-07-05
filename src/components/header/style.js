@@ -14,9 +14,18 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .menu, .shopping-bag {
-    svg {
-      font-size: 2rem;
-    }
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    font-size: 2rem;
   }
+`;
+
+export const Figure = styled.figure`
+  display: flex;
+  align-items: center;
 `;

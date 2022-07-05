@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-input, button {
-  font-family: inherit;
-}
-
 html {
   height: 100%;
   font-size: 62.5%;
@@ -22,4 +18,13 @@ body {
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   line-height: 1.5;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
