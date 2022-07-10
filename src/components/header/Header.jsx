@@ -17,27 +17,29 @@ const Header = () => {
   const [menu, toggleMenu] = useState(false);
 
   return (
-    <Container>
-      <Navbar>
-        <motion.div
-          animate={menu ? 'open' : 'closed'}
-          variants={variants}
-          initial={false}
-          transition={{ duration: 0.3 }}
-          onClick={() => {
-            toggleMenu(!menu);
-          }}
-        >
-          {menu ? <ExitIcon /> : <HiOutlineMenuAlt4 />}
-        </motion.div>
-        <Figure className='logo'>
-          <img src={logo} alt='Logo' />
-        </Figure>
-        <div className='shopping-bag'>
-          <MdOutlineShoppingBag />
-        </div>
-      </Navbar>
-    </Container>
+    <header>
+      <Container>
+        <Navbar>
+          <motion.div
+            animate={menu ? 'open' : 'closed'}
+            variants={variants}
+            initial={false}
+            transition={{ duration: 0.3 }}
+            onClick={() => {
+              toggleMenu(!menu);
+            }}
+          >
+            {menu ? <ExitIcon /> : <HiOutlineMenuAlt4 />}
+          </motion.div>
+          <Figure className='logo'>
+            <img src={logo} alt='Logo' />
+          </Figure>
+          <div className='shopping-bag'>
+            <MdOutlineShoppingBag />
+          </div>
+        </Navbar>
+      </Container>
+    </header>
   );
 };
 
