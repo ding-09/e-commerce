@@ -28,15 +28,19 @@ body {
 }
 
 main {
-
 }
 
 footer {
   margin-top: auto;
 }
 
-input, button {
+input,
+button {
   font-family: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
