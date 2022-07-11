@@ -2,9 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Nav } from './style';
 
-const NavLinks = () => {
+const NavLinks = ({ fontColor }) => {
   return (
-    <Nav>
+    <Nav color={fontColor}>
       <ul>
         <li>
           <NavLink to='women'>Women</NavLink>
