@@ -9,7 +9,7 @@ export const Container = styled.div`
   color: #1b1b1b;
 `;
 
-export const Navbar = styled.nav`
+export const NavContainer = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
@@ -20,8 +20,11 @@ export const Navbar = styled.nav`
     justify-content: center;
     align-items: center;
   }
+  button {
+    border: none;
+    background: none;
+  }
 `;
-
 
 export const Figure = styled.figure`
   display: flex;

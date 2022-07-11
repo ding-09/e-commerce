@@ -1,16 +1,19 @@
-import React from 'react'
-import logo from '../../assets/logo.svg'
-import { Container } from './style'
+import React from 'react';
+import { ReactComponent as Logo } from '../../assets/footer-logo.svg';
+import { Container } from './style';
 
 const Footer = () => {
   return (
     <footer>
-      icon
-      nav 
-      social
-      copyright
+      <Container>
+        <figure>
+          <Logo />
+        </figure>
+        
+        nav social copyright
+      </Container>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

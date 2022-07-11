@@ -4,7 +4,7 @@ import logo from '../../assets/logo.svg';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { MdOutlineShoppingBag } from 'react-icons/md';
 import { ReactComponent as ExitIcon } from '../../assets/times.svg';
-import { Container, Navbar, Figure } from './style';
+import { Container, NavContainer, Figure } from './style';
 
 const Header = () => {
   // framer motion
@@ -19,8 +19,8 @@ const Header = () => {
   return (
     <header>
       <Container>
-        <Navbar>
-          <motion.div
+        <NavContainer>
+          <motion.button
             animate={menu ? 'open' : 'closed'}
             variants={variants}
             initial={false}
@@ -30,14 +30,14 @@ const Header = () => {
             }}
           >
             {menu ? <ExitIcon /> : <HiOutlineMenuAlt4 />}
-          </motion.div>
-          <Figure className='logo'>
+          </motion.button>
+          <Figure>
             <img src={logo} alt='Logo' />
           </Figure>
-          <div className='shopping-bag'>
+          <button className='shopping-bag'>
             <MdOutlineShoppingBag />
-          </div>
-        </Navbar>
+          </button>
+        </NavContainer>
       </Container>
     </header>
   );
