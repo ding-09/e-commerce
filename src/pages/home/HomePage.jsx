@@ -1,9 +1,16 @@
 import React from 'react'
+import { Hero } from '../../components/cards'
+
+// hero img 
+import heroImg from '../../assets/mobile/hero.jpg'
 
 const HomePage = () => {
   return (
     <div>
-      this is the homepage
+      <Hero img={heroImg}>
+        
+      </Hero>
+
     </div>
   )
 }
