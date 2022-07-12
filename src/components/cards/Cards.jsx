@@ -1,26 +1,30 @@
-import { Card, TextBtnGroup } from './style'
-import { ShopBtn } from '../buttons'
+import { HeroCard, CategoryCard } from './style';
+import { ShopBtn } from '../buttons';
 
 export const Hero = ({ img }) => {
   return (
-    <Card>
+    <HeroCard>
       <picture>
         <img src={img} alt='Hero' />
       </picture>
-      <TextBtnGroup>
+      <div className='text-btn-group'>
         <h1>Express yourself.</h1>
-        <ShopBtn/>
-      </TextBtnGroup>
-    </Card>
+        <ShopBtn />
+      </div>
+    </HeroCard>
   );
 };
 
-export const Category = ({ category }) => {
+export const Category = ({ img, heading }) => {
   return (
-    <>
-      <div>img</div>
-      <div>text</div>
-      <div>button</div>
-    </>
+    <CategoryCard>
+      <picture>
+        <img src={img} alt='Hero' />
+      </picture>
+      <div className='text-btn-group'>
+        <h2>{heading}</h2>
+        <ShopBtn />
+      </div>
+    </CategoryCard>
   );
 };
