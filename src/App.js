@@ -10,16 +10,15 @@ import HomePage from './pages/home';
 const App = () => {
   return (
     <>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path='/' element={<Main />}>
             <Route index element={<HomePage />} />
-            <Route path='nav' element={<NavLinks />} />
           </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </>
   );
 };
