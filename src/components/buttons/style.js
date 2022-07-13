@@ -6,7 +6,7 @@ export const StyledShopBtn = styled.button`
   align-items: center;
   border: 1px solid #1b1b1b;
   border-radius: 0.2rem;
-  opacity: 0.95;
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 2px 2px 0 0 rgba(255, 255, 255, 1);
   .btn-text {
     font-weight: 700;
