@@ -8,9 +8,12 @@ export const Container = styled.div`
   padding: 4rem 0rem;
   gap: 3rem;
   nav {
-    min-height: 10.5rem;
+    min-height: 14rem;
     ul {
       justify-content: space-between;
+      li a {
+        font-size: 1.4rem;
+      }
     }
   }
 `;
@@ -21,9 +24,13 @@ export const Socials = styled.div`
   ul {
     display: flex;
     li {
-      margin-left: 1.4rem;
+      margin-left: 1.8rem;
       a {
         display: flex;
+        svg {
+          width: 2.8rem;
+          height: 2.8rem;
+        }
       }
     }
   }
