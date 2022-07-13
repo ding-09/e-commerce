@@ -12,7 +12,7 @@ const HomePage = () => {
         <Hero img={heroImg}></Hero>
       </section>
       <section className='category'>
-        {categories.map(category => <Category img={category.img} heading={category.heading}/>)}
+        {categories.map((category, index) => <Category img={category.img} heading={category.heading} key={index}/>)}
       </section>
     </Home>
   );
