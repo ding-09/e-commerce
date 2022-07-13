@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo from '../../assets/logo.svg';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
@@ -17,7 +18,7 @@ const Header = () => {
   // toggle menu open and close
   const [menu, toggleMenu] = useState(false);
 
-  // disable scroll when menu is opened 
+  // disable scroll when menu is opened
   useEffect(() => {
     menu
       ? (document.body.style.overflow = 'hidden')
@@ -43,9 +44,9 @@ const Header = () => {
           <Figure>
             <img src={logo} alt='Logo' />
           </Figure>
-          <button className='shopping-bag'>
+          <Link to='cart'>
             <MdOutlineShoppingBag />
-          </button>
+          </Link>
         </NavContainer>
       </Container>
     </header>
