@@ -7,16 +7,16 @@ const NavLinks = ({ fontColor }) => {
     <Nav color={fontColor}>
       <ul>
         <li>
-          <NavLink to='women'>Women</NavLink>
+          <NavLink to='products/women'>Women</NavLink>
         </li>
         <li>
-          <NavLink to='men'>Men</NavLink>
+          <NavLink to='products/men'>Men</NavLink>
         </li>
         <li>
-          <NavLink to='jewelry'>Jewelry</NavLink>
+          <NavLink to='products/jewelry'>Jewelry</NavLink>
         </li>
         <li>
-          <NavLink to='electronics'>Electronics</NavLink>
+          <NavLink to='products/electronics'>Electronics</NavLink>
         </li>
       </ul>
     </Nav>

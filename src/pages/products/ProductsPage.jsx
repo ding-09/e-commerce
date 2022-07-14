@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const ProductsPage = () => {
-  return (
-    <div>
-      We are on products page
-    </div>
-  )
-}
+  const { category } = useParams();
+  return <div>We are the {category}'s product page</div>;
+};
 
-export default ProductsPage
+export default ProductsPage;
